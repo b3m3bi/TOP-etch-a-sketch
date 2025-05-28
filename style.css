@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    margin: auto;
+    width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 10px;
+    height: 10px;
+    color: white;
+    border: 1px solid gainsboro;
+    flex: none;
+}
+
+.coloreado {
+    background-color: black;
+}
