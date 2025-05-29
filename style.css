@@ -16,15 +16,28 @@ html {
 }
 
 .square {
+    position: relative;
     color: white;
     border: 1px solid gainsboro;
-    flex: none;
     aspect-ratio: 1 / 1;
 }
 
 .controlers{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 2em;
     margin: 1em 0;
+    align-items: flex-start;
 }
+
+main {
+    display: flex;
+    margin: auto;
+    width: 800px;
+
+}
+
+/* * {
+    outline: 1px solid red;
+} */
