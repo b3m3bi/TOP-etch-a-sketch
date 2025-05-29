@@ -29,10 +29,21 @@ function createGrid(gridSize, canvasWidth){
 // initialize
 createGrid(40, canvasWidth);
 
+function randomNumber(num){
+    return Math.floor(Math.random() * (num + 1));
+}
 
 container.addEventListener('mouseover', (event) => {
     let target = event.target;
-    target.classList.add('coloreado');
+    if (!target.classList.contains('coloreado')){
+        target.classList.add('coloreado');
+        target.style.backgroundColor = `rgba(${randomNumber(255)}, ${randomNumber(255)}, ${randomNumber(255)}, 0.1)`;
+    } else {
+        let rgba = target.style.backgroundColor.slice(5, -1).split(',').map(elem => +elem);
+        if (rgba[3] < 1){
+            target.style.backgroundColor = `rgba(${rgba[0]}, ${rgba[1]}, ${rgba[2]}, ${rgba[3] + 0.1})`;
+        }
+    }
 
 })
 
