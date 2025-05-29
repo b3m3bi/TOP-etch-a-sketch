@@ -19,4 +19,12 @@ html {
     color: white;
     border: 1px solid gainsboro;
     flex: none;
+    aspect-ratio: 1 / 1;
+}
+
+.controlers{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 1em 0;
 }
