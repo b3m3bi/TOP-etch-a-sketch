@@ -98,6 +98,5 @@ eraseBtn.addEventListener('click', () => {
     createGrid(canvasSize.value, canvasWidth);
 })
 
-
 // initialize
 createGrid(canvasSize.value, canvasWidth);
